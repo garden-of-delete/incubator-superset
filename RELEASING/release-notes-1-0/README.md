@@ -1,5 +1,13 @@
 # Release Notes for Superset 1.0
 Blurb
+## Summary
+Superset 1.0 is the first major release for Apache Superset. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
+[**User Experience**](#user-experience)
+[**Developer Experience**](#developer-experience)
+[**Performance**](#performance)
+[**New Features**](#new-features)
+[**Stability and Bugfixes**](#stability-and-bugfixes)
+
 ## User Experience
 We have taken the Superset user experience to the next level with a much simpler, more intuitive UI.
 
@@ -78,7 +86,7 @@ Superset 1.0 makes it easier for developers to build, deploy, and maintain Super
 
 - feat: add endpoint to export saved queries using new format (#[11447](https://github.com/apache/incubator-superset/pull/11447))
 ### Single Page Application
-depricated
+deprecated
 
 ### Component Library
 This release is a major milestone in an ongoing effort to modernize, consolidate, and simplify the interface elements of Superset. Highly-used components have been visually updated, refactored to modern component libraries, and integrated with React Storybook for immediate visibility with consolidated test/styles. This will ease developer experience and create a more consistent and modern aesthetic for the user.
