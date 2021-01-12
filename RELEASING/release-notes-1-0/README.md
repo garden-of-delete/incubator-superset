@@ -1,4 +1,7 @@
+# Introduction
+Blurb
 ## user_experience
+BLURB
 - docs: restored page on roles in security, executed other touchups, and… (#[11978](https://github.com/apache/incubator-superset/pull/11978))
 - docs: 0.38.0 CHANGELOG and UPDATING (#[11809](https://github.com/apache/incubator-superset/pull/11809))
 - docs: add Xite to users list (#[11775](https://github.com/apache/incubator-superset/pull/11775))
@@ -57,8 +60,10 @@
 - style: eslint curly rule (#[11913](https://github.com/apache/incubator-superset/pull/11913))
 - style: remove react bootstrap fade component (#[11843](https://github.com/apache/incubator-superset/pull/11843))
 - style: dark filter popover background (#[11611](https://github.com/apache/incubator-superset/pull/11611))
-## user_experience-card_layout
-## user_experience-explore_controls
+### card_layout
+BLURB
+### explore_controls
+BLURB
 - feat: Global nav menus open on hover (#[12025](https://github.com/apache/incubator-superset/pull/12025))
 - feat: add hook for dataset health check (#[11970](https://github.com/apache/incubator-superset/pull/11970))
 - feat: add modal to import dashboards (#[11924](https://github.com/apache/incubator-superset/pull/11924))
@@ -73,7 +78,8 @@
 - feat(explore): metrics and filters controls redesign (#[12095](https://github.com/apache/incubator-superset/pull/12095))
 - feat(explore): change save button text when users cannot override (#[11281](https://github.com/apache/incubator-superset/pull/11281))
 - feat(explore): update the order of datasource dropdown menu (#[11424](https://github.com/apache/incubator-superset/pull/11424))
-## user_experience-sql_lab
+### sql_lab
+BLURB
 - feat: initial custom error messages for SQL Lab (#[12080](https://github.com/apache/incubator-superset/pull/12080))
 - feat: show missing parameters in query (#[12049](https://github.com/apache/incubator-superset/pull/12049))
 - feat: Sqllab to Explore UX improvements (#[11755](https://github.com/apache/incubator-superset/pull/11755))
@@ -89,7 +95,8 @@
 - feat: saved query preview modal (#[11135](https://github.com/apache/incubator-superset/pull/11135))
 - feat(saved queries): security perm simplification (#[11764](https://github.com/apache/incubator-superset/pull/11764))
 - feat(welcome): add SQL snippets to saved queries card (#[11678](https://github.com/apache/incubator-superset/pull/11678))
-## user_experience-documentation
+### documentation
+BLURB
 - docs: restored page on roles in security, executed other touchups, and… (#[11978](https://github.com/apache/incubator-superset/pull/11978))
 - docs: 0.38.0 CHANGELOG and UPDATING (#[11809](https://github.com/apache/incubator-superset/pull/11809))
 - docs: add Xite to users list (#[11775](https://github.com/apache/incubator-superset/pull/11775))
@@ -115,6 +122,7 @@
 - docs(releasing): update release automation and docs for Apache graduation (#[12117](https://github.com/apache/incubator-superset/pull/12117))
 - feat: Add new default dashboard (#[12044](https://github.com/apache/incubator-superset/pull/12044))
 ## dev_experience
+BLURB
 - build(deps-dev): update cypress to 5.5.0, improvements for running locally (#[11603](https://github.com/apache/incubator-superset/pull/11603))
 - build(deps-dev): bump less from 3.9.0 to 3.12.2 in /superset-frontend (#[11597](https://github.com/apache/incubator-superset/pull/11597))
 - build(deps-dev): bump @storybook/addon-essentials in /superset-frontend (#[11573](https://github.com/apache/incubator-superset/pull/11573))
@@ -126,8 +134,10 @@
 - chore: bump nvd3 plugin version (#[11947](https://github.com/apache/incubator-superset/pull/11947))
 - chore: bump pypi cryptography from 2.4.2 to 3.2.1 (#[11511](https://github.com/apache/incubator-superset/pull/11511))
 - feat: add endpoint to export saved queries using new format (#[11447](https://github.com/apache/incubator-superset/pull/11447))
-## dev_experience-single_page
-## dev_experience-component_library
+### single_page
+BLURB
+### component_library
+BLURB
 - build(deps-dev): update cypress to 5.5.0, improvements for running locally (#[11603](https://github.com/apache/incubator-superset/pull/11603))
 - build(deps-dev): bump less from 3.9.0 to 3.12.2 in /superset-frontend (#[11597](https://github.com/apache/incubator-superset/pull/11597))
 - build(deps-dev): bump @storybook/addon-essentials in /superset-frontend (#[11573](https://github.com/apache/incubator-superset/pull/11573))
@@ -139,13 +149,16 @@
 - chore: bump nvd3 plugin version (#[11947](https://github.com/apache/incubator-superset/pull/11947))
 - chore: bump pypi cryptography from 2.4.2 to 3.2.1 (#[11511](https://github.com/apache/incubator-superset/pull/11511))
 ## performance
+BLURB
 - feat(SIP-39): Async query support for charts (#[11499](https://github.com/apache/incubator-superset/pull/11499))
 - perf: cache dashboard bootstrap data (#[11234](https://github.com/apache/incubator-superset/pull/11234))
 - perf:  speed up uuid column generation (#[11209](https://github.com/apache/incubator-superset/pull/11209))
 - perf(api): improve API info performance (#[11346](https://github.com/apache/incubator-superset/pull/11346))
-## performance-global_async_query
+### global_async_query
+BLURB
 - feat(SIP-39): Async query support for charts (#[11499](https://github.com/apache/incubator-superset/pull/11499))
 ## new_features
+BLURB
 - chore: Add home link to navbar (#[11851](https://github.com/apache/incubator-superset/pull/11851))
 - chore(home-screen): fixes for loading states, flicker issue, and reduction of api calls (#[11557](https://github.com/apache/incubator-superset/pull/11557))
 - feat: update alert/report icons and column order (#[12081](https://github.com/apache/incubator-superset/pull/12081))
@@ -163,17 +176,20 @@
 - feat(releasing): support changelog csv export (#[11893](https://github.com/apache/incubator-superset/pull/11893))
 - feat(sankey-viz): allow sort by metric and bump superset-ui packages (#[11626](https://github.com/apache/incubator-superset/pull/11626))
 - style: various little tweaks to home screen stylin' (#[11650](https://github.com/apache/incubator-superset/pull/11650))
-## new_features-vizualizations
+### vizualizations
+BLURB
 - feat: add event and interval annotation support to chart data ep (#[11665](https://github.com/apache/incubator-superset/pull/11665))
 - feat: add ECharts BoxPlot chart (#[11199](https://github.com/apache/incubator-superset/pull/11199))
 - feat(sankey-viz): allow sort by metric and bump superset-ui packages (#[11626](https://github.com/apache/incubator-superset/pull/11626))
-## new_features-discovery_navigation
+### discovery_navigation
+BLURB
 - chore: Add home link to navbar (#[11851](https://github.com/apache/incubator-superset/pull/11851))
 - chore(home-screen): fixes for loading states, flicker issue, and reduction of api calls (#[11557](https://github.com/apache/incubator-superset/pull/11557))
 - feat: alert/report execution log list view (#[11937](https://github.com/apache/incubator-superset/pull/11937))
 - feat: home screen mvp  (#[11206](https://github.com/apache/incubator-superset/pull/11206))
 - style: various little tweaks to home screen stylin' (#[11650](https://github.com/apache/incubator-superset/pull/11650))
-## new_features-alerts_reporting
+### alerts_reporting
+BLURB
 - feat: update alert/report icons and column order (#[12081](https://github.com/apache/incubator-superset/pull/12081))
 - feat: add cron picker to AlertReportModal (#[12032](https://github.com/apache/incubator-superset/pull/12032))
 - feat: alerts/reports add/edit modal (#[11770](https://github.com/apache/incubator-superset/pull/11770))
@@ -184,3 +200,4 @@
 - feat(alerts/reports): delete and bulk delete actions (#[12053](https://github.com/apache/incubator-superset/pull/12053))
 - feat(releasing): support changelog csv export (#[11893](https://github.com/apache/incubator-superset/pull/11893))
 ## other
+BLURB
