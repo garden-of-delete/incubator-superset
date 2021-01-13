@@ -2,11 +2,64 @@
 Blurb
 ## Summary
 Superset 1.0 is the first major release for Apache Superset. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
-[**User Experience**](#user-experience)
-[**Developer Experience**](#developer-experience)
-[**Performance**](#performance)
-[**New Features**](#new-features)
-[**Stability and Bugfixes**](#stability-and-bugfixes)
+- [**User Experience**](#user-experience)
+- [**Developer Experience**](#developer-experience)
+- [**Performance**](#performance)
+- [**New Features**](#new-features)
+- [**Stability and Bugfixes**](#stability-and-bugfixes)
+
+## User Experience
+We have taken the Superset user experience to the next level with a much simpler, more intuitive UI.
+
+### Card Layout
+Lists of Charts and Dashboards are shown in a new format using a grid of thumbnails. This makes it easier to discover and find Charts and Dashboards, especially when there is a lot of them in your Superset instance.
+
+### Explore Controls
+Visualization controls have been updated to create a more consistent and modernized interface. Refactoring includes updates to the content/labeling/ordering of these controls as well as updating their styling and simplifying their interactions and layout. This will line us up for features like drag-and-drop controls, and dynamically populated control inputs.
+
+### SQL Lab
+Users now have the ability to create and name a new dataset or update an existing dataset when moving from SQL Lab to Explore. When going back to SQL Lab, the underlying query for the dataset will be shown, allowing users to easily make changes and update their dataset when moving between SQL Lab and Explore.
+
+### Documentation
+The [Superset 1.0 documentation](https://superset.apache.org/docs/intro) has been updated to reflect the current design and functionality. 
+
+## Developer Experience
+Superset 1.0 makes it easier for developers to build, deploy, and maintain Superset functionality.
+
+### Single Page Application
+deprecated
+
+### Component Library
+This release is a major milestone in an ongoing effort to modernize, consolidate, and simplify the interface elements of Superset. Highly-used components have been visually updated, refactored to modern component libraries, and integrated with React Storybook for immediate visibility with consolidated test/styles. This will ease developer experience and create a more consistent and modern aesthetic for the user.
+
+## Performance
+This the most performant Superset release to date, with enhanced scalability and efficiency.
+
+### Global Async Query Support
+Charts and SQL Lab both now support asynchronous data loading. This will improve performance and user experience when loading query results, especially when there are many charts in a Dashboard or when queries are long running.
+
+## New Features
+Superset 1.0 includes some other new features and enhancements.
+
+### Improved Data Visualizations
+New visualization plugin architecture will make it easier to build, test, style and configure custom visualizations for Superset. Dynamic viz plugin imports will allow Superset to load data viz plugins, allowing  developers to more easily use or share their custom plugins and load custom plugins on-demand. Superset has also adopted Apache ECharts as the core library for new visualizations. 
+
+### Discovery and Navigation
+A redesigned home screen and landing page makes discoverability much easier. Global Search gives users the ability to access search from all pages in the app. This can be used to search across databases, datasets, charts, dashboards, and queries.
+
+### Alerts and Reporting
+Alerts and reporting have received a robust backend and UI overhaul.
+
+## Other
+Blurb 
+
+## Summary
+Superset 1.0 is the first major release for Apache Superset. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
+- [**User Experience**](#user-experience)
+- [**Developer Experience**](#developer-experience)
+- [**Performance**](#performance)
+- [**New Features**](#new-features)
+- [**Stability and Bugfixes**](#stability-and-bugfixes)
 
 ## User Experience
 We have taken the Superset user experience to the next level with a much simpler, more intuitive UI.
@@ -55,7 +108,7 @@ Users now have the ability to create and name a new dataset or update an existin
 - feat(saved queries): security perm simplification (#[11764](https://github.com/apache/incubator-superset/pull/11764))
 - feat(welcome): add SQL snippets to saved queries card (#[11678](https://github.com/apache/incubator-superset/pull/11678))
 ### Documentation
-The [Superset 1.0 Documentation](https://superset.apache.org/docs/intro) has been updated to reflect the current design and functionality. 
+The [Superset 1.0 documentation](https://superset.apache.org/docs/intro) has been updated to reflect the current design and functionality. 
 
 - docs: restored page on roles in security, executed other touchups, and… (#[11978](https://github.com/apache/incubator-superset/pull/11978))
 - docs: 0.38.0 CHANGELOG and UPDATING (#[11809](https://github.com/apache/incubator-superset/pull/11809))
