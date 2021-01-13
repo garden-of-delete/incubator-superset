@@ -1,6 +1,5 @@
 # Release Notes for Superset 1.0
 
-## Summary
 Superset 1.0 is the first major release for Apache Superset. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
 - [**User Experience**](#user-experience)
 - [**Developer Experience**](#developer-experience)
@@ -11,47 +10,49 @@ Superset 1.0 is the first major release for Apache Superset. This release holds 
 # User Experience
 We have taken the Superset user experience to the next level with a much simpler, more intuitive UI.
 
-## Card Layout
 Lists of Charts and Dashboards are shown in a new format using a grid of thumbnails. This makes it easier to discover and find Charts and Dashboards, especially when there is a lot of them in your Superset instance.
 
-## Explore Controls
+<kbd><img src="media/card_view.png" width="800"/></kbd>
+
 Visualization controls have been updated to create a more consistent and modernized interface. Refactoring includes updates to the content/labeling/ordering of these controls as well as updating their styling and simplifying their interactions and layout. This will line us up for features like drag-and-drop controls, and dynamically populated control inputs.
 
-## SQL Lab
 Users now have the ability to create and name a new dataset or update an existing dataset when moving from SQL Lab to Explore. When going back to SQL Lab, the underlying query for the dataset will be shown, allowing users to easily make changes and update their dataset when moving between SQL Lab and Explore.
 
-## Documentation
 The [Superset 1.0 documentation](https://superset.apache.org/docs/intro) has been updated to reflect the current design and functionality. 
 
 # Developer Experience
-Superset 1.0 makes it easier for developers to build, deploy, and maintain Superset functionality.
-
-## Single Page Application
-deprecated
-
-## Component Library
-This release is a major milestone in an ongoing effort to modernize, consolidate, and simplify the interface elements of Superset. Highly-used components have been visually updated, refactored to modern component libraries, and integrated with React Storybook for immediate visibility with consolidated test/styles. This will ease developer experience and create a more consistent and modern aesthetic for the user.
+Superset 1.0 makes it easier for developers to build, deploy, and maintain Superset functionality. This release is a major milestone in an ongoing effort to modernize, consolidate, and simplify the interface elements of Superset. Highly-used components have been visually updated, refactored to modern component libraries, and integrated with React Storybook for immediate visibility with consolidated test/styles. This improves the developer experience and creates a more consistent and modern aesthetic for the user.
 
 # Performance
-This the most performant Superset release to date, with enhanced scalability and efficiency.
-
-## Global Async Query Support
-Charts and SQL Lab both now support asynchronous data loading. This will improve performance and user experience when loading query results, especially when there are many charts in a Dashboard or when queries are long running.
+This the most performant Superset release to date, with enhanced scalability and efficiency. In addition to many small tweaks, Charts and SQL Lab both now support asynchronous data loading. Users will feel this improvement when loading query results, especially when there are many charts in a Dashboard or when queries are long running.
 
 # New Features
-Superset 1.0 includes some other new features and enhancements.
+Superset 1.0 includes some other new features and enhancements. New visualization plugin architecture will make it easier to build, test, style and configure custom visualizations for Superset. Dynamic viz plugin imports will allow Superset to load data viz plugins, allowing developers to more easily use or share their custom plugins and load custom plugins on-demand. Superset has also adopted Apache ECharts as the core library for new visualizations. 
 
-## Improved Data Visualizations
-New visualization plugin architecture will make it easier to build, test, style and configure custom visualizations for Superset. Dynamic viz plugin imports will allow Superset to load data viz plugins, allowing  developers to more easily use or share their custom plugins and load custom plugins on-demand. Superset has also adopted Apache ECharts as the core library for new visualizations. 
+<kbd><img src="media/echarts_timeseries_prophet.png" width="800"/></kbd>
 
-## Discovery and Navigation
-A redesigned home screen and landing page makes discoverability much easier. Global Search gives users the ability to access search from all pages in the app. This can be used to search across databases, datasets, charts, dashboards, and queries.
+Along with the Echarts integration, we are also introducing a better set of annotation features. Formula annotation, which allows users to plot any mathematical function on the chart; Interval and Event annotations, will allow users to add context to the trent in Time-Series; and Line annotation, which use a predefined chart as the source of annotation. 
 
-## Alerts and Reporting
+<kbd><img src="media/annotations.png" width="800"/></kbd>
+
+Unlike many other BI tools, Superset's dashboard filter lives as a chart, which needs to be created in the Explore view and added to dashboard as a chart/component. To improve the usability and user experience, we are introducing a new dashboard filter as a dashboard-native component, allowing users to create, add, and edit filters quickly at the dashboard level.
+
+<kbd><img src="media/dashboard_filter.png" width="800"/></kbd>
+
+A redesigned home screen provides a personalized landing page that the user sees when they log into Superset, improving discoverability. It shows items relevant to the user (Charts, Dashboards, Saved Queries, etc) and serves as a hub to discover content and access recent items quickly.
+
+<kbd><img src="media/home_screen.png" width="800"/></kbd>
+
+Charts on dashboards have been updated to concisely show which filters are in scope, have been applied, or are in error. Context around filter changes has been increased by highlighting scoped charts when a filter is selected and increasing visibility of charts with incompatible filters applied.
+
+<kbd><img src="media/dashboard_filter.png" width="800"/></kbd>
+
 Alerts and reporting have received a robust backend and UI overhaul.
 
-# Other
-Blurb 
+<kbd><img src="media/alerts_reports.png" width="800"/></kbd>
+
+# Stability and Bugfixes
+This release emphasizes hardening and squashing bugs, with hundreds of bugfixes. Future major releases will see a continued emphasis on providing a stable and bug-free experience.
 
 # Highlighted PRs
 # User Experience
@@ -153,6 +154,7 @@ This the most performant Superset release to date, with enhanced scalability and
 - perf: cache dashboard bootstrap data (#[11234](https://github.com/apache/incubator-superset/pull/11234))
 - perf:  speed up uuid column generation (#[11209](https://github.com/apache/incubator-superset/pull/11209))
 - perf(api): improve API info performance (#[11346](https://github.com/apache/incubator-superset/pull/11346))
+
 ## Global Async Query Support
 Charts and SQL Lab both now support asynchronous data loading. This will improve performance and user experience when loading query results, especially when there are many charts in a Dashboard or when queries are long running.
 
@@ -186,6 +188,10 @@ Alerts and reporting have received a robust backend and UI overhaul.
 - feat(alerts/reports): add refresh action (#[12071](https://github.com/apache/incubator-superset/pull/12071))
 - feat(alerts/reports): delete and bulk delete actions (#[12053](https://github.com/apache/incubator-superset/pull/12053))
 - feat(releasing): support changelog csv export (#[11893](https://github.com/apache/incubator-superset/pull/11893))
-# Other
-Blurb 
 
+# Breaking Changes
+## Breaking Changes
+[List of backwards incompatible changes](https://github.com/apache/incubator-superset/blob/master/UPDATING.md#0380)
+
+## Complete Changelog
+For the complete changelog, see [apache/incubator-superset/CHANGELOG.md](https://github.com/apache/incubator-superset/blob/master/CHANGELOG.md)
