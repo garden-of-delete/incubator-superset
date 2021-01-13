@@ -54,7 +54,10 @@ Alerts and reporting have received a robust backend and UI overhaul.
 # Stability and Bugfixes
 This release emphasizes hardening and squashing bugs, with hundreds of bugfixes. Future major releases will see a continued emphasis on providing a stable and bug-free experience.
 
-# Highlighted PRs
+# Community Spotlight
+blurb
+
+# PR Highlights
 # User Experience
 We have taken the Superset user experience to the next level with a much simpler, more intuitive UI.
 
